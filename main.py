@@ -12,6 +12,7 @@ if __name__ == "__main__":
             parse_docs(file_path)
             break
         except:
+	    traceback.print_exc();
             print("Putanju koju ste uneli nije validna!")
     query = input("Unesite upit(Opcione kljucne reci: AND, OR, NOT; Izlaz: x):")
     while query != "x":
